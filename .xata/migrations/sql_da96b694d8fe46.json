@@ -1,0 +1,18 @@
+{
+  "done": true,
+  "migration": {
+    "name": "sql_da96b694d8fe46",
+    "operations": [
+      {
+        "sql": {
+          "up": "CREATE TABLE IF NOT EXISTS news_table (id text PRIMARY KEY NOT NULL, slug text NOT NULL, heading text NOT NULL, content text NOT NULL, image text, CONSTRAINT news_table_slug_unique UNIQUE (slug))"
+        }
+      }
+    ]
+  },
+  "migrationType": "inferred",
+  "name": "sql_da96b694d8fe46",
+  "parent": "mig_csmbb9h32vjpfm25j50g",
+  "schema": "public",
+  "startedAt": "2024-11-07T12:43:08.200666Z"
+}
