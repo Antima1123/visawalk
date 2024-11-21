@@ -26,7 +26,7 @@ export default function NewsPage(){
                     <p>Invitations to apply (ITAs) for the latest Express Entry draw have been sent out by Immigration, Refugees, and Citizenship Canada (IRCC).</p>
                     <p>In a Canadian Experience Class (CEC) draw, the government distributed 400 ITAs.</p>
                     <p>To be eligible, candidates had to have a minimum Comprehensive Ranking System (CRS) score of 539.</p>
-                    <p >If you've found this news helpful, then make sure to contact us. You can book a <button className="underline font-[600] hover:text-blue-950 mr-2 hover:no-underline">free visa consultation</button>or give us a call at +91-8586899360 for assistance in consultation, visa documentation, and much more.</p>
+                    <p >If you&apos;ve found this news helpful, then make sure to contact us. You can book a <button className="underline font-[600] hover:text-blue-950 mr-2 hover:no-underline">free visa consultation</button>or give us a call at +91-8586899360 for assistance in consultation, visa documentation, and much more.</p>
                     <p>source: https://www.cicnews.com/</p>
                </div>
             </div>
