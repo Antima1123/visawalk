@@ -12,12 +12,28 @@ const app = new Hono()
             .select({
                 content: newsTable.content,
                 image: newsTable.image,
-                head: newsTable.header
+                header: newsTable.header,
+                slug: newsTable.slug, 
             })
             .from(newsTable)
             .where(eq(newsTable.slug, slug))
 
             return c.json({data})
         })
+
+    .get('/',
+        async (c) => {
+            const data = await db
+            .select({
+                content: newsTable.content,
+                image: newsTable.image,
+                header: newsTable.header,
+                slug: newsTable.slug, 
+            })
+            .from(newsTable)
+
+            return c.json({data})
+        }
+    )
 
 export default app
