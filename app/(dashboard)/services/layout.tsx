@@ -1,5 +1,3 @@
-import { EnquiryForm } from "@/components/enquiry-form"
-import Image from "next/image"
 
 type props ={
     children: React.ReactNode

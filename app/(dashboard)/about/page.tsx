@@ -55,7 +55,7 @@ export default function AboutUs() {
                               <div className="flex gap-2  ">
                                  <div className="flex">
                                     <GiCheckMark size={20} className=" mt-1 "/>
-                                    <h1 className=" text-md font-[600]">Profile Assessment:</h1>
+                                    <h1 className="w-36 text-md font-[600]">Profile Assessment:</h1>
                                  </div>
                                  <p>Our industry professionals assess your profile by taking a retrospective and prospective approach. Only after an intensive study, we tell you your honest chances of going abroad and getting the visa approved.</p>
                               </div>
@@ -65,7 +65,7 @@ export default function AboutUs() {
                               <div className="flex gap-2 items-start ">
                                  <div className="flex">
                                     <GiCheckMark size={20} className="mt-1 "/>
-                                    <h1 className="text-md font-[600]">Consultation:</h1>
+                                    <h1 className=" w-36 text-md font-[600]">Consultation:</h1>
                                  </div>
                                  <p>We provide you a consultation on study & job opporstunities in your preferred country, enlighten you about other ways to move abroad, walk you through the process and documentation required for migration and make the immigration process as smooth as possible.</p>
                               </div>

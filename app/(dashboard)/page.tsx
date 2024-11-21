@@ -1,7 +1,6 @@
 "use client"
 
 import Component  from "@/components/dash-carousel";
-import Image from "next/image";
 import { WhoWeAre } from "../../components/who-we-are";
 import { NewsCard } from "@/components/news-card";
 
