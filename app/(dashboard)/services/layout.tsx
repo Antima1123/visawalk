@@ -1,9 +1,8 @@
 
 type props ={
     children: React.ReactNode
-    img: string
 }
-const ServicesLayout = ({children, img}: props) =>{
+const ServicesLayout = ({children}: props) =>{
     return(
        <div>
             {children}
