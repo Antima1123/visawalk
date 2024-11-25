@@ -1,4 +1,4 @@
-import { client } from "@/lib/hono";
+import { client } from "@/providers/hono";
 import { useQuery } from "@tanstack/react-query";
 
 export const useGetNews = (slug: any) =>{
