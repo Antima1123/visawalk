@@ -17,7 +17,7 @@ export default function Home() {
           <h1 className="text-[#009B8D] text-2xl font-[600]">Latest Immigration News</h1>
           <h2 className="text-lg font-[600]">Stay updated about the visa industry</h2>
         </div>
-        <div className="flex gap-4 px-2 ">
+        <div className="grid md:grid-cols-4 gap-4 px-2 ">
           {newsdata?.map((news,index)=>(
             <NewsCard
               key={index}

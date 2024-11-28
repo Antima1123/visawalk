@@ -11,14 +11,14 @@ type formprops = {
     title: string,
     image: string,
     slug:  string,
-    content: string
+    content: string,
 }
 const EntryData = () =>{
     const [data, setData] = useState<formprops>({
-        title: '',
-        image: '',
-        slug:  '',
-        content: ''
+        title:   '',
+        image:   '',
+        slug:    '',
+        content: '',
     })
     const inputdata = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>{
         const{ name, value} = e.target
@@ -35,9 +35,9 @@ const EntryData = () =>{
 
         const values = {
             image:     data.image,
-            content:   data.content,
-            header:     data.title,
-            slug:      data.slug
+            content:  data.content,
+            header:   data.title,
+            slug:     data.slug
         }
 
         mutation.mutate(values,{
