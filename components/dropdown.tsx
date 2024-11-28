@@ -27,23 +27,23 @@ export const Dropdown = () => {
                             </div>
                            
                             <div className="w-full h-12 group hover:bg-[#f0ffd3] hover:text-gray-300 flex ">
-                               <div className="items-center px-4 w-full flex">Study Visa</div>    
+                                <Link href= "/services/study-visa"><p className=" items-center px-4 w-full flex">Study Visa</p> </Link>
                             </div>
 
                             <div className="w-full h-12 group hover:bg-[#f0ffd3] hover:text-gray-300 flex ">
-                               <div className="items-center px-4 w-full flex">Visa Documentation</div>    
+                                <Link href= "/services/visa-documentation"><p className=" items-center px-4 w-full flex">Visa Documentation</p> </Link>   
                             </div>
 
                             <div className="w-full h-12 group hover:bg-[#f0ffd3] hover:text-gray-300 flex ">
-                               <div className="items-center px-4 w-full flex ">IELTS Training</div>   
+                                <Link href= "/services/ielts-training"><p className=" items-center px-4 w-full flex">IELTS Training</p> </Link>   
                             </div>
 
                             <div className="w-full h-12 group hover:bg-[#f0ffd3] hover:text-gray-300 flex ">
-                               <div className=" items-center px-4 w-full flex">Profile Assesment</div>    
+                                <Link href= "/services/profile-assessment"><p className=" items-center px-4 w-full flex">Profile Assessment</p> </Link>    
                             </div>
 
                             <div className="w-full h-12 group hover:bg-[#f0ffd3] hover:text-gray-300 flex ">
-                               <div className="items-center px-4 w-full flex">Visa Consultation </div>    
+                                <Link href= "/services/visa-consultation"><p className=" items-center px-4 w-full flex">Visa Consultation</p> </Link>   
                             </div>
                         </motion.div>
                     )}

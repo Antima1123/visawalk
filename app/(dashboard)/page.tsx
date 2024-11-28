@@ -4,6 +4,8 @@ import Component  from "@/components/dash-carousel";
 import { WhoWeAre } from "../../components/who-we-are";
 import { NewsCard } from "@/components/news-card";
 import { getAllNews } from "@/features/get-all-news";
+import { WorldMapDemo } from "@/components/world-map";
+import {AssessmentCard} from "@/components/assistent-card";
 
 export default function Home() {
   const getQuery = getAllNews();
@@ -28,6 +30,11 @@ export default function Home() {
           ))}
         </div>
       </div>
+      
+      <div className="flex items-center justify-center">
+        <AssessmentCard/>
+      </div>
+      <WorldMapDemo/>
    </div>
   );
 }

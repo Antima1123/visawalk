@@ -23,13 +23,15 @@ export const Navigation = () =>{
                 </Link>
            </div>
             
-            <Button 
-            size="lg"
-            variant="link"
-            type="button" 
-            className=" bg-gradient-to-r from-[#79c08d] from-10% to-[#bdd78d] to-90%  ...">
-                Free Assessment
-            </Button>
+            <Link href="/free-assessment">
+                <Button 
+                size="lg"
+                variant="link"
+                type="button" 
+                className=" bg-gradient-to-r from-[#79c08d] from-10% to-[#bdd78d] to-90%  ...">
+                    Free Assessment
+                </Button>
+            </Link>
 
         </nav>
     )

@@ -4,8 +4,8 @@ import { EnquiryForm } from "@/components/enquiry-form";
 import Image from "next/image"
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
 import { GiCheckMark } from "react-icons/gi";
+import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 
 export default function AboutUs() {
@@ -51,43 +51,45 @@ export default function AboutUs() {
                         <div className="flex flex-col gap-y-2">
                            <h1 className="text-2xl font-[600] mb-2">Services Offered</h1>
 
-                           <div className="gap-2 flex flex-col">
-                              <div className="flex gap-2  ">
-                                 <div className="flex">
-                                    <GiCheckMark size={20} className=" mt-1 mr-1"/>
-                                    <h1 className="w-36 text-md font-[600]">Profile Assessment:</h1>
-                                 </div>
-                                 <p>Our industry professionals assess your profile by taking a retrospective and prospective approach. Only after an intensive study, we tell you your honest chances of going abroad and getting the visa approved.</p>
-                              </div>
+                           <div  className="flex gap-2 items-start ">
+                              <GiCheckMark size={20} className=" mt-1 mr-1"/>
+                              <p>
+                                 <b className="text-md font-[600]">
+                                    Profile Assessment:
+                                 </b>
+                                 Our industry professionals assess your profile by taking a retrospective and prospective approach. Only after an intensive study, we tell you your honest chances of going abroad and getting the visa approved.
+                              </p> 
                            </div>
 
                            
                               <div className="flex gap-2 items-start ">
-                                 <GiCheckMark size={30} className="mt-1 mr-1"/>
+                                 <GiCheckMark size={26} className="mt-1 mr-1"/>
                                  <p>
-                                       <b className="text-md font-[600]">
-                                          Consultation:
-                                       </b>
+                                    <b className="text-md font-[600]">
+                                       Consultation:
+                                    </b>
                                      We provide you a consultation on study & job opporstunities in your preferred country, enlighten you about other ways to move abroad, walk you through the process and documentation required for migration and make the immigration process as smooth as possible.
+                                 </p>
+                              </div>
+                              
+
+                              <div className="flex gap-2 items-start ">
+                                 <GiCheckMark size={16} className=" mt-1 mr-1"/>
+                                 <p>
+                                    <b className="text-md font-[600]">
+                                       Documentation:
+                                    </b>
+                                     Because of our decade-long experience, we know every bit of documentation required for all visas, by heart.
                                  </p>
                               </div>
 
                               <div className="flex gap-2 items-start ">
-                                 <div className="flex">
-                                    <GiCheckMark size={20} className=" mt-1 mr-1"/>
-                                    <h1 className="text-md font-[600]">Documentation:</h1>
-                                 </div>
-                                 <p>Because of our decade-long experience, we know every bit of documentation required for all visas, by heart.</p>
+                                 <GiCheckMark size={20} className=" mt-1 mr-1"/>
+                                 <p>
+                                    <b className="text-md font-[600]">IELTS Coaching: </b>
+                                    Because of our decade-long experience, we know every bit of documentation required for all visas, by heart.
+                                 </p>
                               </div>
-
-                              <div className="flex gap-2 items-start ">
-                                 <div className="flex">
-                                    <GiCheckMark size={20} className=" mt-1 mr-1"/>
-                                    <h1 className="text-md font-[600]">IELTS Coaching: </h1>
-                                 </div>
-                                 <p>Because of our decade-long experience, we know every bit of documentation required for all visas, by heart.</p>
-                              </div>
-                        </div>
 
                         <div className="flex flex-col gap-y-2">
                            <h1 className="text-2xl font-[600] mb-2">Our Mission</h1>
@@ -138,15 +140,20 @@ export default function AboutUs() {
                            </p>
                         </div>
 
-                        <div className=" inline-flex items-baseline text-xl font-xl"><FaQuoteLeft size={20}/>We, at Visa walk, believe in a pro-active approach and are thus, successful in almost all our visa processing endeavors. You too can book a free visa consultancy with us today!<FaQuoteRight size={20} /></div>
+                        <div className="flex">
+                           <RiDoubleQuotesL size={20} color="#009B8D"/>
+                           <p>We, at Visa walk, believe in a pro-active approach and are thus, successful in almost all our visa processing endeavors. You too can book a free visa consultancy with us today!</p>
+                           <RiDoubleQuotesR size={20} color="#009B8D" />
+                        </div>
+                        
                      </div>
                   </div>     
                </div>
-               <div className="flex py-10">
-                  <EnquiryForm/>
-               </div>
-         </div>
-
+            </div>
+             <div className="flex py-10">
+               <EnquiryForm/>
+            </div>
+      </div>
                
      </div>
     );
