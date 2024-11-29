@@ -77,8 +77,8 @@ const DatabaseClient = buildClient();
 
 const defaultOptions = {
   databaseURL: process.env.DATABASE_ENDPOINT,
-  branch: process.env.XATA_BRANCH,
   apiKey: process.env.XATA_API_KEY,
+  branch: process.env.XATA_BRANCH
 };
 
 export class XataClient extends DatabaseClient<DatabaseSchema> {
