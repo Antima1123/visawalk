@@ -6,6 +6,7 @@ import { NewsCard } from "@/components/news-card";
 import { getAllNews } from "@/features/get-all-news";
 import { WorldMapDemo } from "@/components/world-map";
 import {AssessmentCard} from "@/components/assistent-card";
+import { AnimatedTestimonialsDemo } from "@/components/testimonial";
 
 export default function Home() {
   const getQuery = getAllNews();
@@ -31,9 +32,22 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="flex items-center justify-center">
+      <div className="flex flex-col mt-20 items-center justify-center">
+      <div className="text-center ">
+          <h1 className="text-[#009B8D] text-2xl font-[600]">Our Assistance</h1>
+          <h2 className="text-lg font-[600]">Visa Walk helps you in..</h2>
+        </div>
         <AssessmentCard/>
       </div>
+
+      <div className="flex flex-col mt-20 items-center justify-center">
+        <div className="text-center ">
+          <h1 className="text-[#009B8D] text-2xl font-[600]">Our Team </h1>
+          <h2 className="text-lg font-[600]">Visa Walk team helps you to find your destiny..</h2>
+        </div>
+        <AnimatedTestimonialsDemo/>
+      </div>
+        
       <WorldMapDemo/>
    </div>
   );
