@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 export function WorldMapDemo() {
   return (
     <div className=" py-40 dark:bg-black bg-white w-full">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="w-full text-center">
         <p className="font-[600] text-xl md:text-3xl dark:text-white text-[#009B8D]">
           Remote{" "}
           <span className="text-[#009B8D]">

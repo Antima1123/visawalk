@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="flex flex-col mt-20 items-center justify-center">
+      <div className="flex flex-col max-w-screen-2xl mx-auto mt-20 items-center justify-center">
       <div className="text-center ">
           <h1 className="text-[#009B8D] text-2xl font-[600]">Our Assistance</h1>
           <h2 className="text-lg font-[600]">Visa Walk helps you in..</h2>
@@ -48,7 +48,9 @@ export default function Home() {
         <AnimatedTestimonialsDemo/>
       </div>
         
-      <WorldMapDemo/>
+      <div className="max-w-screen-2xl mx-auto">
+        <WorldMapDemo/>
+      </div>
    </div>
   );
 }

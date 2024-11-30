@@ -11,7 +11,7 @@ export const Dropdown = () => {
             <motion.div  
                         onHoverStart={()=>setService(true)}
                         onHoverEnd={()=> setService(false)}
-                        className="flex h-12 gap-1 items-center  "
+                        className="flex bg-red-200 h-12 gap-1 items-center  "
                     >
                         <div>Services</div>
                         <IoMdArrowDropdown size={18}/>
@@ -20,7 +20,7 @@ export const Dropdown = () => {
                         <motion.div
                         onHoverStart={()=>setService(true)}
                         onHoverEnd={()=> setService(false)}
-                            className="-mt-1 w-60 py-4 items-center justify-center gap-4 text-[16px] shadow-md absolute z-[100] bg-white text-black"
+                            className="-mt-1  w-60 py-4 items-center justify-center gap-4 text-[16px] shadow-md absolute z-[100] bg-white text-black"
                         >
                             <div className="w-full h-12 hover:bg-[#f0ffd3] hover:text-gray-300 flex ">
                                <Link href= "/services/immegration"><p className=" items-center px-4 w-full flex">Immegration</p> </Link>   

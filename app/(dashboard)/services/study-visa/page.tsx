@@ -3,7 +3,7 @@ import { SideBar } from "../components/side-bar"
 
 const Studyvisa = () =>{
     return(
-        <div className="flex justify-between">
+        <div className="grid md:grid-cols-2 justify-between">
             <SideBar/>
             <EnquiryForm/>
         </div>
