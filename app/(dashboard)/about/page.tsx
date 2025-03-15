@@ -29,7 +29,7 @@ export default function AboutUs() {
             <div className="flex flex-col w-full max-w-screen-2xl mx-auto">
 
                <div className="w-full mt-4 flex">
-                  Home{` > `}<Link href={"#"} className="text-green-600 font-[500]">{path.slice(1)}</Link>
+                  Home{` > `}<Link href={"#"} className="font-[500]">{path.slice(1)}</Link>
                </div>
 
                <div className="flex flex-col gap-4 py-10 ">

@@ -11,7 +11,7 @@ export const Dropdown = () => {
             <motion.div  
                         onHoverStart={()=>setService(true)}
                         onHoverEnd={()=> setService(false)}
-                        className="flex bg-red-200 h-12 gap-1 items-center  "
+                        className="flex h-12 gap-1 items-center  "
                     >
                         <div>Services</div>
                         <IoMdArrowDropdown size={18}/>

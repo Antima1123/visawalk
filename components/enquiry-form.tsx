@@ -3,7 +3,7 @@ import { Button } from "./ui/button"
 
 export const EnquiryForm = () =>{
     return(
-        <div className="flex flex-col gap-y-4">
+        <section className=" flex-col flex items-center gap-y-4 w-auto">
             <form className="w-[20rem] h-[24rem] px-4 pt-5 items-center justify-center border border-[#bdd78d] rounded-lg  bg-gradient-to-r from-[#f3fcfd] to-[#fcfef9]">
                <h1 className="text-xl font-[600] text-center pb-5 ">Immigration Enquiry Form</h1>
                   <div className="flex flex-col gap-4">
@@ -52,6 +52,6 @@ export const EnquiryForm = () =>{
                 height={300}
                 className=""
             />
-        </div>
+        </section>
     )
 }

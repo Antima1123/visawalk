@@ -12,4 +12,3 @@ export const useOpenShare = create<props>((set) => ({
     onClose: ()=> set({isOpen: false})
 }));
 
-// to bolo na ye wo hai 
