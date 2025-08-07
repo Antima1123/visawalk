@@ -45,37 +45,60 @@
 
 :root {
   --radius: 0.625rem;
+
+  /* Visa-themed color palette */
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+
+  /* Primary: Professional Blue */
+  --primary: oklch(0.4 0.15 240);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
+
+  /* Secondary: Trust Green */
+  --secondary: oklch(0.45 0.12 160);
+  --secondary-foreground: oklch(0.985 0 0);
+
+  /* Accent: Gold for highlights */
+  --accent: oklch(0.7 0.15 85);
+  --accent-foreground: oklch(0.145 0 0);
+
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  --ring: oklch(0.4 0.15 240);
+
+  /* Success: Green for approvals */
+  --success: oklch(0.5 0.15 160);
+  --success-foreground: oklch(0.985 0 0);
+
+  /* Warning: Orange for pending */
+  --warning: oklch(0.7 0.15 85);
+  --warning-foreground: oklch(0.145 0 0);
+
+  /* Info: Light blue for information */
+  --info: oklch(0.6 0.12 220);
+  --info-foreground: oklch(0.985 0 0);
+
+  --chart-1: oklch(0.4 0.15 240);
+  --chart-2: oklch(0.45 0.12 160);
+  --chart-3: oklch(0.7 0.15 85);
+  --chart-4: oklch(0.6 0.12 220);
+  --chart-5: oklch(0.5 0.15 160);
+
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary: oklch(0.4 0.15 240);
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-accent-foreground: oklch(0.145 0 0);
   --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-ring: oklch(0.4 0.15 240);
 }
 
 .dark {
@@ -117,6 +140,65 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-ring;
+  }
+}
+
+@layer components {
+  /* Visa-specific component styles */
+  .visa-gradient {
+    background: linear-gradient(135deg, oklch(0.4 0.15 240) 0%, oklch(0.45 0.12 160) 100%);
+  }
+
+  .visa-card {
+    @apply bg-card border border-border rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+
+  .visa-button-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .visa-button-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 focus:ring-2 focus:ring-secondary focus:ring-offset-2;
+  }
+
+  .visa-input {
+    @apply border-input bg-background focus:border-primary focus:ring-2 focus:ring-primary/20;
+  }
+
+  .visa-text-gradient {
+    background: linear-gradient(135deg, oklch(0.4 0.15 240) 0%, oklch(0.45 0.12 160) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .visa-hero-bg {
+    background: linear-gradient(135deg, oklch(0.4 0.15 240 / 0.05) 0%, oklch(0.45 0.12 160 / 0.05) 100%);
+  }
+
+  .visa-section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .visa-container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
   }
 }
